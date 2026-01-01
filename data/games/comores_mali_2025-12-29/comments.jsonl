@@ -1,0 +1,119 @@
+{"id":"COM_MLI_2025_01_001","match_id":"COM_MLI_2025_01","minute":1,"text":"La première mi-temps commence.","event_type":"start","team":null}
+{"id":"COM_MLI_2025_01_002","match_id":"COM_MLI_2025_01","minute":2,"text":"Kamory Doumbia (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_003","match_id":"COM_MLI_2025_01","minute":2,"text":"Faute de Benjaloud Youssouf (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_004","match_id":"COM_MLI_2025_01","minute":2,"text":"Dorgeles Nene (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_005","match_id":"COM_MLI_2025_01","minute":2,"text":"Faute de Zaydou Youssouf (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_006","match_id":"COM_MLI_2025_01","minute":3,"text":"Dorgeles Nene (Mali) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_007","match_id":"COM_MLI_2025_01","minute":3,"text":"Faute de Benjaloud Youssouf (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_008","match_id":"COM_MLI_2025_01","minute":8,"text":"Faute de Yannis Kari (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_009","match_id":"COM_MLI_2025_01","minute":8,"text":"Mohamed Camara (Mali) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_010","match_id":"COM_MLI_2025_01","minute":9,"text":"Corner, Comores. Corner concédé par Abdoulaye Diaby.","event_type":"corner","team":"home"}
+{"id":"COM_MLI_2025_01_011","match_id":"COM_MLI_2025_01","minute":10,"text":"Corner, Comores. Corner concédé par Mamadou Sangaré.","event_type":"corner","team":"home"}
+{"id":"COM_MLI_2025_01_012","match_id":"COM_MLI_2025_01","minute":11,"text":"Tir non cadré. Yannis Kari (Comores) du pied gauche de la droite du coeur de la surface de réparation.","event_type":"shot_missed","team":"home"}
+{"id":"COM_MLI_2025_01_013","match_id":"COM_MLI_2025_01","minute":12,"text":"Faute de Myziane Maolida (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_014","match_id":"COM_MLI_2025_01","minute":12,"text":"Nathan Gassama (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_015","match_id":"COM_MLI_2025_01","minute":13,"text":"Tir non cadré. Mamadou Sangaré (Mali) du pied gauche de l'extérieur de la surface de réparation. Dernière passe de Fodé Doucouré.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_016","match_id":"COM_MLI_2025_01","minute":14,"text":"Faute de Zaydou Youssouf (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_017","match_id":"COM_MLI_2025_01","minute":14,"text":"Lassine Sinayoko (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_018","match_id":"COM_MLI_2025_01","minute":15,"text":"Corner, Mali. Corner concédé par Akim Abdallah.","event_type":"corner","team":"away"}
+{"id":"COM_MLI_2025_01_019","match_id":"COM_MLI_2025_01","minute":15,"text":"Hors jeu, Mali. Yves Bissouma a tenté une passe en profondeur mais Ousmane Camara était hors jeu.","event_type":"offside","team":"away"}
+{"id":"COM_MLI_2025_01_020","match_id":"COM_MLI_2025_01","minute":17,"text":"Tir contré. Dorgeles Nene (Mali) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Kamory Doumbia.","event_type":"shot_blocked","team":"away"}
+{"id":"COM_MLI_2025_01_021","match_id":"COM_MLI_2025_01","minute":17,"text":"Corner, Mali. Corner concédé par Faïz Selamani.","event_type":"corner","team":"away"}
+{"id":"COM_MLI_2025_01_022","match_id":"COM_MLI_2025_01","minute":19,"text":"Tir non cadré. Yves Bissouma (Mali) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Kamory Doumbia.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_023","match_id":"COM_MLI_2025_01","minute":21,"text":"Faute de Kenan Toibibou (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_024","match_id":"COM_MLI_2025_01","minute":21,"text":"Dorgeles Nene (Mali) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_025","match_id":"COM_MLI_2025_01","minute":22,"text":"Faute de Ahmed Soilihi (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_026","match_id":"COM_MLI_2025_01","minute":22,"text":"Kamory Doumbia (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_027","match_id":"COM_MLI_2025_01","minute":25,"text":"Faute de Yannis Kari (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_028","match_id":"COM_MLI_2025_01","minute":25,"text":"Lassine Sinayoko (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_029","match_id":"COM_MLI_2025_01","minute":27,"text":"Faïz Selamani (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_030","match_id":"COM_MLI_2025_01","minute":27,"text":"Faute de Mamadou Sangaré (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_031","match_id":"COM_MLI_2025_01","minute":27,"text":"Faute de Rafiki Saïd (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_032","match_id":"COM_MLI_2025_01","minute":27,"text":"Fodé Doucouré (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_033","match_id":"COM_MLI_2025_01","minute":28,"text":"Faute de Myziane Maolida (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_034","match_id":"COM_MLI_2025_01","minute":28,"text":"Ousmane Camara (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_035","match_id":"COM_MLI_2025_01","minute":33,"text":"Faute de Rafiki Saïd (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_036","match_id":"COM_MLI_2025_01","minute":33,"text":"Mohamed Camara (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_037","match_id":"COM_MLI_2025_01","minute":34,"text":"Faute de Kenan Toibibou (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_038","match_id":"COM_MLI_2025_01","minute":34,"text":"Dorgeles Nene (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_039","match_id":"COM_MLI_2025_01","minute":34,"text":"Kenan Toibibou (Comores) reçoit un carton jaune.","event_type":"yellow_card","team":"home"}
+{"id":"COM_MLI_2025_01_040","match_id":"COM_MLI_2025_01","minute":35,"text":"Faute de Faïz Selamani (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_041","match_id":"COM_MLI_2025_01","minute":35,"text":"Mohamed Camara (Mali) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_042","match_id":"COM_MLI_2025_01","minute":39,"text":"Corner, Comores. Corner concédé par Fodé Doucouré.","event_type":"corner","team":"home"}
+{"id":"COM_MLI_2025_01_043","match_id":"COM_MLI_2025_01","minute":41,"text":"Arrêt. Dorgeles Nene (Mali) du pied gauche de l'extérieur de la surface de réparation voit son tir stoppé. Dernière passe de Fodé Doucouré.","event_type":"shot_saved","team":"away"}
+{"id":"COM_MLI_2025_01_044","match_id":"COM_MLI_2025_01","minute":43,"text":"Arrêt. Mohamed Camara (Mali) du pied droit de l'extérieur de la surface de réparation voit son tir stoppé. Dernière passe de Kamory Doumbia.","event_type":"shot_saved","team":"away"}
+{"id":"COM_MLI_2025_01_045","match_id":"COM_MLI_2025_01","minute":43,"text":"Akim Abdallah (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_046","match_id":"COM_MLI_2025_01","minute":43,"text":"Faute de Fodé Doucouré (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_047","match_id":"COM_MLI_2025_01","minute":44,"text":"Hors jeu, Comores. Faïz Selamani a tenté une passe en profondeur mais Rafiki Saïd était hors jeu.","event_type":"offside","team":"home"}
+{"id":"COM_MLI_2025_01_048","match_id":"COM_MLI_2025_01","minute":46,"text":"Le quatrième arbitre vient d'indiquer 1 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"COM_MLI_2025_01_049","match_id":"COM_MLI_2025_01","minute":47,"text":"La première mi-temps se termine, Comores 0, Mali 0.","event_type":"ht_end","team":null}
+{"id":"COM_MLI_2025_01_050","match_id":"COM_MLI_2025_01","minute":46,"text":"La deuxième mi-temps commence Comores 0, Mali 0.","event_type":"start_2h","team":null}
+{"id":"COM_MLI_2025_01_051","match_id":"COM_MLI_2025_01","minute":47,"text":"Yacine Bourhane (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_052","match_id":"COM_MLI_2025_01","minute":47,"text":"Faute de Mohamed Camara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_053","match_id":"COM_MLI_2025_01","minute":47,"text":"Mohamed Camara (Mali) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"away"}
+{"id":"COM_MLI_2025_01_054","match_id":"COM_MLI_2025_01","minute":49,"text":"Tir non cadré. Mamadou Sangaré (Mali) du pied gauche de l'extérieur de la surface de réparation. Dernière passe de Dorgeles Nene.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_055","match_id":"COM_MLI_2025_01","minute":49,"text":"Faute de Zaydou Youssouf (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_056","match_id":"COM_MLI_2025_01","minute":49,"text":"Lassine Sinayoko (Mali) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_057","match_id":"COM_MLI_2025_01","minute":50,"text":"Tir non cadré. Yves Bissouma (Mali) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Mamadou Sangaré.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_058","match_id":"COM_MLI_2025_01","minute":51,"text":"Faute de Faïz Selamani (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_059","match_id":"COM_MLI_2025_01","minute":51,"text":"Yves Bissouma (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_060","match_id":"COM_MLI_2025_01","minute":51,"text":"Hors jeu, Mali. Kamory Doumbia a tenté une passe en profondeur mais Dorgeles Nene était hors jeu.","event_type":"offside","team":"away"}
+{"id":"COM_MLI_2025_01_061","match_id":"COM_MLI_2025_01","minute":55,"text":"Tir non cadré. Nathan Gassama (Mali) du pied gauche de l'extérieur de la surface de réparation. Dernière passe de Lassine Sinayoko d'une passe de la tête.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_062","match_id":"COM_MLI_2025_01","minute":55,"text":"Tir non cadré. Kamory Doumbia (Mali) du pied droit depuis le point de penalty. Dernière passe de Nathan Gassama.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_063","match_id":"COM_MLI_2025_01","minute":56,"text":"Tir contré. Myziane Maolida (Comores) du pied droit à gauche de la surface de réparation. Dernière passe de Faïz Selamani.","event_type":"shot_blocked","team":"home"}
+{"id":"COM_MLI_2025_01_064","match_id":"COM_MLI_2025_01","minute":57,"text":"Remplacement, Comores. Ismaël Boura remplace Ahmed Soilihi.","event_type":"substitution","team":"home"}
+{"id":"COM_MLI_2025_01_065","match_id":"COM_MLI_2025_01","minute":58,"text":"Remplacement, Comores. El-Fardou Ben remplace Myziane Maolida.","event_type":"substitution","team":"home"}
+{"id":"COM_MLI_2025_01_066","match_id":"COM_MLI_2025_01","minute":59,"text":"Le jeu est interrompu: Yannick Pandor (Comores) sur blessure.","event_type":"injury_break","team":"home"}
+{"id":"COM_MLI_2025_01_067","match_id":"COM_MLI_2025_01","minute":61,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"COM_MLI_2025_01_068","match_id":"COM_MLI_2025_01","minute":61,"text":"Yacine Bourhane (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_069","match_id":"COM_MLI_2025_01","minute":61,"text":"Faute de Mohamed Camara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_070","match_id":"COM_MLI_2025_01","minute":61,"text":"Hors jeu, Comores. Faïz Selamani a tenté une passe en profondeur mais Rafiki Saïd était hors jeu.","event_type":"offside","team":"home"}
+{"id":"COM_MLI_2025_01_071","match_id":"COM_MLI_2025_01","minute":63,"text":"Remplacement, Mali. Mahamadou Doumbia remplace Yves Bissouma.","event_type":"substitution","team":"away"}
+{"id":"COM_MLI_2025_01_072","match_id":"COM_MLI_2025_01","minute":64,"text":"Tir contré. Dorgeles Nene (Mali) de la tête depuis le point de penalty. Dernière passe de Fodé Doucouré suite à un centre.","event_type":"shot_blocked","team":"away"}
+{"id":"COM_MLI_2025_01_073","match_id":"COM_MLI_2025_01","minute":65,"text":"Arrêt. El-Fardou Ben (Comores) du pied gauche à gauche de la surface de réparation voit son tir stoppé. Dernière passe de Faïz Selamani.","event_type":"shot_saved","team":"home"}
+{"id":"COM_MLI_2025_01_074","match_id":"COM_MLI_2025_01","minute":65,"text":"Corner, Comores. Corner concédé par Djigui Diarra.","event_type":"corner","team":"home"}
+{"id":"COM_MLI_2025_01_075","match_id":"COM_MLI_2025_01","minute":66,"text":"Faute de Rafiki Saïd (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_076","match_id":"COM_MLI_2025_01","minute":66,"text":"Mohamed Camara (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_077","match_id":"COM_MLI_2025_01","minute":67,"text":"Faute de Ismaël Boura (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_078","match_id":"COM_MLI_2025_01","minute":67,"text":"Lassine Sinayoko (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_079","match_id":"COM_MLI_2025_01","minute":68,"text":"Faute de Yacine Bourhane (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_080","match_id":"COM_MLI_2025_01","minute":68,"text":"Nathan Gassama (Mali) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_081","match_id":"COM_MLI_2025_01","minute":69,"text":"Tir non cadré. Faïz Selamani (Comores) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Akim Abdallah.","event_type":"shot_missed","team":"home"}
+{"id":"COM_MLI_2025_01_082","match_id":"COM_MLI_2025_01","minute":70,"text":"Remplacement, Mali. Amadou Haidara remplace Mohamed Camara.","event_type":"substitution","team":"away"}
+{"id":"COM_MLI_2025_01_083","match_id":"COM_MLI_2025_01","minute":70,"text":"Remplacement, Mali. Gaoussou Diarra remplace Dorgeles Nene.","event_type":"substitution","team":"away"}
+{"id":"COM_MLI_2025_01_084","match_id":"COM_MLI_2025_01","minute":72,"text":"Remplacement, Comores. Iyad Mohamed remplace Yacine Bourhane.","event_type":"substitution","team":"home"}
+{"id":"COM_MLI_2025_01_085","match_id":"COM_MLI_2025_01","minute":72,"text":"Remplacement, Comores. Youssouf M'Changama remplace Zaydou Youssouf.","event_type":"substitution","team":"home"}
+{"id":"COM_MLI_2025_01_086","match_id":"COM_MLI_2025_01","minute":72,"text":"Hors jeu, Comores. Faïz Selamani a tenté une passe en profondeur mais Rafiki Saïd était hors jeu.","event_type":"offside","team":"home"}
+{"id":"COM_MLI_2025_01_087","match_id":"COM_MLI_2025_01","minute":75,"text":"Tir non cadré. Gaoussou Diarra (Mali) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Mamadou Sangaré.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_088","match_id":"COM_MLI_2025_01","minute":77,"text":"Tir contré. Lassine Sinayoko (Mali) du pied gauche de l'extérieur de la surface de réparation. Dernière passe de Mahamadou Doumbia.","event_type":"shot_blocked","team":"away"}
+{"id":"COM_MLI_2025_01_089","match_id":"COM_MLI_2025_01","minute":77,"text":"Corner, Comores. Corner concédé par Amadou Haidara.","event_type":"corner","team":"home"}
+{"id":"COM_MLI_2025_01_090","match_id":"COM_MLI_2025_01","minute":78,"text":"Faute de Akim Abdallah (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_091","match_id":"COM_MLI_2025_01","minute":78,"text":"Mamadou Sangaré (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_092","match_id":"COM_MLI_2025_01","minute":79,"text":"Faute de Ismaël Boura (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_093","match_id":"COM_MLI_2025_01","minute":79,"text":"Lassine Sinayoko (Mali) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_094","match_id":"COM_MLI_2025_01","minute":79,"text":"Ismaël Boura (Comores) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"home"}
+{"id":"COM_MLI_2025_01_095","match_id":"COM_MLI_2025_01","minute":81,"text":"Youssouf M'Changama (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_096","match_id":"COM_MLI_2025_01","minute":81,"text":"Faute de Mamadou Sangaré (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_097","match_id":"COM_MLI_2025_01","minute":82,"text":"Tir non cadré. Mamadou Sangaré (Mali) du pied gauche depuis le point de penalty. Dernière passe de Nathan Gassama suite à un centre.","event_type":"shot_missed","team":"away"}
+{"id":"COM_MLI_2025_01_098","match_id":"COM_MLI_2025_01","minute":83,"text":"Remplacement, Mali. Lassana Coulibaly remplace Mamadou Sangaré.","event_type":"substitution","team":"away"}
+{"id":"COM_MLI_2025_01_099","match_id":"COM_MLI_2025_01","minute":83,"text":"Remplacement, Mali. Mamadou Camara remplace Lassine Sinayoko.","event_type":"substitution","team":"away"}
+{"id":"COM_MLI_2025_01_100","match_id":"COM_MLI_2025_01","minute":84,"text":"Remplacement, Comores. Saïd Bakari remplace Bendjaloud Youssouf.","event_type":"substitution","team":"home"}
+{"id":"COM_MLI_2025_01_101","match_id":"COM_MLI_2025_01","minute":85,"text":"Faïz Selamani (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_102","match_id":"COM_MLI_2025_01","minute":85,"text":"Faute de Mamadou Camara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_103","match_id":"COM_MLI_2025_01","minute":85,"text":"Youssouf M'Changama (Comores) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_104","match_id":"COM_MLI_2025_01","minute":85,"text":"Faute de Mamadou Camara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_105","match_id":"COM_MLI_2025_01","minute":85,"text":"Faute de Amadou Haidara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_106","match_id":"COM_MLI_2025_01","minute":86,"text":"Le jeu est interrompu: Youssouf M'Changama (Comores) sur blessure.","event_type":"injury_break","team":"home"}
+{"id":"COM_MLI_2025_01_107","match_id":"COM_MLI_2025_01","minute":87,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"COM_MLI_2025_01_108","match_id":"COM_MLI_2025_01","minute":87,"text":"Décision VAR : Carton modifié Amadou Haidara (Mali).","event_type":"var_decision","team":"away"}
+{"id":"COM_MLI_2025_01_109","match_id":"COM_MLI_2025_01","minute":88,"text":"Amadou Haidara (Mali) reçoit un carton rouge.","event_type":"red_card","team":"away"}
+{"id":"COM_MLI_2025_01_110","match_id":"COM_MLI_2025_01","minute":90,"text":"Tir non cadré. Youssouf M'Changama (Comores) du pied droit de l'extérieur de la surface de réparation.","event_type":"shot_missed","team":"home"}
+{"id":"COM_MLI_2025_01_111","match_id":"COM_MLI_2025_01","minute":90,"text":"Le quatrième arbitre vient d'indiquer 5 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"COM_MLI_2025_01_112","match_id":"COM_MLI_2025_01","minute":91,"text":"Faute de El-Fardou Ben (Comores).","event_type":"foul","team":"home"}
+{"id":"COM_MLI_2025_01_113","match_id":"COM_MLI_2025_01","minute":91,"text":"Lassana Coulibaly (Mali) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"COM_MLI_2025_01_114","match_id":"COM_MLI_2025_01","minute":91,"text":"El-Fardou Ben (Comores) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"home"}
+{"id":"COM_MLI_2025_01_115","match_id":"COM_MLI_2025_01","minute":92,"text":"Le jeu est interrompu: Lassana Coulibaly (Mali) sur blessure.","event_type":"injury_break","team":"away"}
+{"id":"COM_MLI_2025_01_116","match_id":"COM_MLI_2025_01","minute":93,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"COM_MLI_2025_01_117","match_id":"COM_MLI_2025_01","minute":93,"text":"Kenan Toibibou (Comores) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"COM_MLI_2025_01_118","match_id":"COM_MLI_2025_01","minute":93,"text":"Faute de Mamadou Camara (Mali).","event_type":"foul","team":"away"}
+{"id":"COM_MLI_2025_01_119","match_id":"COM_MLI_2025_01","minute":95,"text":"La deuxième mi-temps se termine, Comores 0, Mali 0.","event_type":"ft_end","team":null}

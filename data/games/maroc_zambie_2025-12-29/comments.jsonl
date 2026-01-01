@@ -1,0 +1,134 @@
+{"id":"ZMB_MAR_2025_01_001","match_id":"ZMB_MAR_2025_01","minute":1,"text":"La première mi-temps commence.","event_type":"start","team":null}
+{"id":"ZMB_MAR_2025_01_002","match_id":"ZMB_MAR_2025_01","minute":1,"text":"Arrêt. Ayoub El Kaabi (Maroc) du pied droit à droite de la surface de réparation voit son tir stoppé. Dernière passe de Brahim Díaz.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_003","match_id":"ZMB_MAR_2025_01","minute":3,"text":"Hors jeu, Zambie. David Hamansenya a tenté une passe en profondeur mais Patson Daka était hors jeu.","event_type":"offside","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_004","match_id":"ZMB_MAR_2025_01","minute":6,"text":"Arrêt. Abde Ezzalzouli (Maroc) du pied gauche à gauche de la surface de réparation voit son tir stoppé. Dernière passe de Neil El Aynaoui.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_005","match_id":"ZMB_MAR_2025_01","minute":7,"text":"Tir non cadré. Brahim Díaz (Maroc) du pied gauche à droite de la surface de réparation.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_006","match_id":"ZMB_MAR_2025_01","minute":7,"text":"Noussair Mazraoui (Maroc) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_007","match_id":"ZMB_MAR_2025_01","minute":7,"text":"Faute de Lubambo Musonda (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_008","match_id":"ZMB_MAR_2025_01","minute":8,"text":"Brahim Díaz (Maroc) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_009","match_id":"ZMB_MAR_2025_01","minute":8,"text":"Faute de Joseph Liteta (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_010","match_id":"ZMB_MAR_2025_01","minute":9,"text":"Tir contré. Azzedine Ounahi (Maroc) du pied droit de l'extérieur de la surface de réparation.","event_type":"attempt_blocked","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_011","match_id":"ZMB_MAR_2025_01","minute":9,"text":"Corner, Maroc. Corner concédé par David Hamansenya.","event_type":"corner","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_012","match_id":"ZMB_MAR_2025_01","minute":9,"text":"But! Zambie 0, Maroc 1. Ayoub El Kaabi (Maroc) marque de la tête. Passe décisive de Azzedine Ounahi suite à un centre sur corner.","event_type":"goal","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_013","match_id":"ZMB_MAR_2025_01","minute":13,"text":"Le jeu est interrompu: David Hamansenya (Zambie) sur blessure.","event_type":"start_delay","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_014","match_id":"ZMB_MAR_2025_01","minute":14,"text":"Le match reprend suite à une courte interruption.","event_type":"end_delay","team":null}
+{"id":"ZMB_MAR_2025_01_015","match_id":"ZMB_MAR_2025_01","minute":18,"text":"Noussair Mazraoui (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_016","match_id":"ZMB_MAR_2025_01","minute":18,"text":"Faute de Mathews Banda (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_017","match_id":"ZMB_MAR_2025_01","minute":19,"text":"Tir non cadré. Dominic Chanda (Zambie) de la tête depuis le point de penalty. Dernière passe de Mathews Banda.","event_type":"miss","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_018","match_id":"ZMB_MAR_2025_01","minute":20,"text":"Hors jeu, Zambie. David Hamansenya a tenté une passe en profondeur mais Benson Sakala était hors jeu.","event_type":"offside","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_019","match_id":"ZMB_MAR_2025_01","minute":21,"text":"Ayoub El Kaabi (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_020","match_id":"ZMB_MAR_2025_01","minute":21,"text":"Faute de Lubambo Musonda (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_021","match_id":"ZMB_MAR_2025_01","minute":23,"text":"Tir non cadré. Brahim Díaz (Maroc) du pied droit à droite de la surface de réparation.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_022","match_id":"ZMB_MAR_2025_01","minute":23,"text":"Kabaso Chongo (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_023","match_id":"ZMB_MAR_2025_01","minute":23,"text":"Faute de Ayoub El Kaabi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_024","match_id":"ZMB_MAR_2025_01","minute":24,"text":"Benson Sakala (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_025","match_id":"ZMB_MAR_2025_01","minute":24,"text":"Faute de Ismael Saibari (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_026","match_id":"ZMB_MAR_2025_01","minute":25,"text":"Main de Benson Sakala (Zambie).","event_type":"handball","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_027","match_id":"ZMB_MAR_2025_01","minute":26,"text":"Neil El Aynaoui (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_028","match_id":"ZMB_MAR_2025_01","minute":26,"text":"Faute de Joseph Liteta (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_029","match_id":"ZMB_MAR_2025_01","minute":27,"text":"But! Zambie 0, Maroc 2. Brahim Díaz (Maroc) marque du pied gauche. Passe décisive de Abde Ezzalzouli.","event_type":"goal","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_030","match_id":"ZMB_MAR_2025_01","minute":29,"text":"Miguel Chaiwa (Zambie) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_031","match_id":"ZMB_MAR_2025_01","minute":29,"text":"Azzedine Ounahi (Maroc) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_032","match_id":"ZMB_MAR_2025_01","minute":29,"text":"Faute de Miguel Chaiwa (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_033","match_id":"ZMB_MAR_2025_01","minute":31,"text":"Ismael Saibari (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_034","match_id":"ZMB_MAR_2025_01","minute":31,"text":"Faute de Benson Sakala (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_035","match_id":"ZMB_MAR_2025_01","minute":33,"text":"Ismael Saibari (Maroc) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_036","match_id":"ZMB_MAR_2025_01","minute":33,"text":"Faute de Benson Sakala (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_037","match_id":"ZMB_MAR_2025_01","minute":35,"text":"Azzedine Ounahi (Maroc) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_038","match_id":"ZMB_MAR_2025_01","minute":35,"text":"Faute de Kings Kangwa (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_039","match_id":"ZMB_MAR_2025_01","minute":35,"text":"Corner, Maroc. Corner concédé par Patson Daka.","event_type":"corner","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_040","match_id":"ZMB_MAR_2025_01","minute":35,"text":"Tir contré. Abde Ezzalzouli (Maroc) du pied droit d’un angle fermé de la gauche. Dernière passe de Azzedine Ounahi.","event_type":"attempt_blocked","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_041","match_id":"ZMB_MAR_2025_01","minute":36,"text":"Tir non cadré. Azzedine Ounahi (Maroc) du pied droit de l'extérieur de la surface de réparation.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_042","match_id":"ZMB_MAR_2025_01","minute":37,"text":"Brahim Díaz (Maroc) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_043","match_id":"ZMB_MAR_2025_01","minute":37,"text":"Faute de Joseph Liteta (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_044","match_id":"ZMB_MAR_2025_01","minute":38,"text":"Tir non cadré. Brahim Díaz (Maroc) du pied droit depuis le point de penalty. Dernière passe de Abde Ezzalzouli.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_045","match_id":"ZMB_MAR_2025_01","minute":39,"text":"Kabaso Chongo (Zambie) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_046","match_id":"ZMB_MAR_2025_01","minute":39,"text":"Ayoub El Kaabi (Maroc) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_047","match_id":"ZMB_MAR_2025_01","minute":39,"text":"Faute de Kabaso Chongo (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_048","match_id":"ZMB_MAR_2025_01","minute":41,"text":"Le jeu est interrompu: Abde Ezzalzouli (Maroc) sur blessure.","event_type":"start_delay","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_049","match_id":"ZMB_MAR_2025_01","minute":42,"text":"Le match reprend suite à une courte interruption.","event_type":"end_delay","team":null}
+{"id":"ZMB_MAR_2025_01_050","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Le quatrième arbitre vient d'indiquer 3 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"ZMB_MAR_2025_01_051","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Arrêt. Brahim Díaz (Maroc) du pied droit depuis le point de penalty voit son tir stoppé.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_052","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Hors jeu, Maroc. Azzedine Ounahi a tenté une passe en profondeur mais Brahim Díaz était hors jeu.","event_type":"offside","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_053","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Dominic Chanda (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_054","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Faute de Ayoub El Kaabi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_055","match_id":"ZMB_MAR_2025_01","minute":45,"text":"Kings Kangwa (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_056","match_id":"ZMB_MAR_2025_01","minute":45,"text":"La première mi-temps se termine, Zambie 0, Maroc 2.","event_type":"end_half","team":null}
+{"id":"ZMB_MAR_2025_01_057","match_id":"ZMB_MAR_2025_01","minute":46,"text":"Remplacement, Zambie. Lameck Banda remplace Joseph Liteta.","event_type":"substitution","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_058","match_id":"ZMB_MAR_2025_01","minute":46,"text":"Remplacement, Zambie. Eliya Mandanji remplace Kabaso Chongo.","event_type":"substitution","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_059","match_id":"ZMB_MAR_2025_01","minute":46,"text":"La deuxième mi-temps commence Zambie 0, Maroc 2.","event_type":"start_second_half","team":null}
+{"id":"ZMB_MAR_2025_01_060","match_id":"ZMB_MAR_2025_01","minute":46,"text":"Tir contré. Azzedine Ounahi (Maroc) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Abde Ezzalzouli.","event_type":"attempt_blocked","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_061","match_id":"ZMB_MAR_2025_01","minute":46,"text":"Patson Daka (Zambie) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_062","match_id":"ZMB_MAR_2025_01","minute":46,"text":"Faute de Nayef Aguerd (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_063","match_id":"ZMB_MAR_2025_01","minute":47,"text":"Hors jeu, Maroc. Abde Ezzalzouli a tenté une passe en profondeur mais Ismael Saibari était hors jeu.","event_type":"offside","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_064","match_id":"ZMB_MAR_2025_01","minute":49,"text":"Tir non cadré. Patson Daka (Zambie) du pied gauche depuis le point de penalty. Dernière passe de Lameck Banda.","event_type":"miss","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_065","match_id":"ZMB_MAR_2025_01","minute":49,"text":"Abde Ezzalzouli (Maroc) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_066","match_id":"ZMB_MAR_2025_01","minute":49,"text":"Faute de Mathews Banda (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_067","match_id":"ZMB_MAR_2025_01","minute":50,"text":"But! Zambie 0, Maroc 3. Ayoub El Kaabi (Maroc) marque du pied gauche. Passe décisive de Azzedine Ounahi suite à un centre suite à un coup franc.But validé après vérification du VAR.","event_type":"goal","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_068","match_id":"ZMB_MAR_2025_01","minute":53,"text":"Décision VAR : But Zambie 0-3 Maroc (Ayoub El Kaabi).","event_type":"var","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_069","match_id":"ZMB_MAR_2025_01","minute":55,"text":"Eliya Mandanji (Zambie) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_070","match_id":"ZMB_MAR_2025_01","minute":55,"text":"Lameck Banda (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_071","match_id":"ZMB_MAR_2025_01","minute":55,"text":"Abde Ezzalzouli (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_072","match_id":"ZMB_MAR_2025_01","minute":55,"text":"Faute de Eliya Mandanji (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_073","match_id":"ZMB_MAR_2025_01","minute":55,"text":"Faute de Ayoub El Kaabi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_074","match_id":"ZMB_MAR_2025_01","minute":57,"text":"Arrêt. Abde Ezzalzouli (Maroc) du pied droit depuis le point de penalty voit son tir stoppé. Dernière passe de Azzedine Ounahi.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_075","match_id":"ZMB_MAR_2025_01","minute":57,"text":"Corner, Maroc. Corner concédé par David Hamansenya.","event_type":"corner","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_076","match_id":"ZMB_MAR_2025_01","minute":58,"text":"Le jeu est interrompu: Mathews Banda (Zambie) sur blessure.","event_type":"start_delay","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_077","match_id":"ZMB_MAR_2025_01","minute":59,"text":"Le match reprend suite à une courte interruption.","event_type":"end_delay","team":null}
+{"id":"ZMB_MAR_2025_01_078","match_id":"ZMB_MAR_2025_01","minute":59,"text":"Hors jeu, Maroc. Mohamed Chibi a tenté une passe en profondeur mais Nayef Aguerd était hors jeu.","event_type":"offside","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_079","match_id":"ZMB_MAR_2025_01","minute":64,"text":"Remplacement, Maroc. Eliesse Ben Seghir remplace Ismael Saibari.","event_type":"substitution","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_080","match_id":"ZMB_MAR_2025_01","minute":64,"text":"Remplacement, Maroc. Ilias Akhomach remplace Brahim Díaz.","event_type":"substitution","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_081","match_id":"ZMB_MAR_2025_01","minute":64,"text":"Remplacement, Maroc. Achraf Hakimi remplace Noussair Mazraoui.","event_type":"substitution","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_082","match_id":"ZMB_MAR_2025_01","minute":64,"text":"Remplacement, Zambie. Joseph Sabobo remplace Mathews Banda sur blessure.","event_type":"substitution","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_083","match_id":"ZMB_MAR_2025_01","minute":65,"text":"Azzedine Ounahi (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_084","match_id":"ZMB_MAR_2025_01","minute":65,"text":"Faute de David Hamansenya (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_085","match_id":"ZMB_MAR_2025_01","minute":66,"text":"Achraf Hakimi (Maroc) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_086","match_id":"ZMB_MAR_2025_01","minute":66,"text":"Faute de David Hamansenya (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_087","match_id":"ZMB_MAR_2025_01","minute":67,"text":"Tir non cadré. Nayef Aguerd (Maroc) du pied gauche de l'extérieur de la surface de réparation.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_088","match_id":"ZMB_MAR_2025_01","minute":69,"text":"Willard Mwanza (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_089","match_id":"ZMB_MAR_2025_01","minute":69,"text":"Faute de Ayoub El Kaabi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_090","match_id":"ZMB_MAR_2025_01","minute":70,"text":"Adam Masina (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_091","match_id":"ZMB_MAR_2025_01","minute":70,"text":"Faute de Patson Daka (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_092","match_id":"ZMB_MAR_2025_01","minute":72,"text":"Lubambo Musonda (Zambie) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_093","match_id":"ZMB_MAR_2025_01","minute":72,"text":"Nayef Aguerd (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_094","match_id":"ZMB_MAR_2025_01","minute":72,"text":"Faute de Eliya Mandanji (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_095","match_id":"ZMB_MAR_2025_01","minute":72,"text":"Faute de Abde Ezzalzouli (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_096","match_id":"ZMB_MAR_2025_01","minute":74,"text":"Remplacement, Maroc. Chemsdine Talbi remplace Abde Ezzalzouli.","event_type":"substitution","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_097","match_id":"ZMB_MAR_2025_01","minute":74,"text":"Remplacement, Maroc. Youssef En-Nesyri remplace Ayoub El Kaabi.","event_type":"substitution","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_098","match_id":"ZMB_MAR_2025_01","minute":75,"text":"Corner, Maroc. Corner concédé par Miguel Chaiwa.","event_type":"corner","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_099","match_id":"ZMB_MAR_2025_01","minute":76,"text":"Corner, Maroc. Corner concédé par Eliya Mandanji.","event_type":"corner","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_100","match_id":"ZMB_MAR_2025_01","minute":76,"text":"Ilias Akhomach (Maroc) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_101","match_id":"ZMB_MAR_2025_01","minute":76,"text":"Faute de David Hamansenya (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_102","match_id":"ZMB_MAR_2025_01","minute":77,"text":"Tir non cadré. Achraf Hakimi (Maroc) du pied droit de l'extérieur de la surface de réparation.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_103","match_id":"ZMB_MAR_2025_01","minute":78,"text":"Lubambo Musonda (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_104","match_id":"ZMB_MAR_2025_01","minute":78,"text":"Faute de Mohamed Chibi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_105","match_id":"ZMB_MAR_2025_01","minute":79,"text":"Remplacement, Zambie. Given Kalusa remplace Kings Kangwa.","event_type":"substitution","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_106","match_id":"ZMB_MAR_2025_01","minute":79,"text":"Remplacement, Zambie. Wilson Chisala remplace Patson Daka.","event_type":"substitution","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_107","match_id":"ZMB_MAR_2025_01","minute":79,"text":"Azzedine Ounahi (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_108","match_id":"ZMB_MAR_2025_01","minute":79,"text":"Faute de Wilson Chisala (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_109","match_id":"ZMB_MAR_2025_01","minute":80,"text":"Ilias Akhomach (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_110","match_id":"ZMB_MAR_2025_01","minute":80,"text":"Faute de David Hamansenya (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_111","match_id":"ZMB_MAR_2025_01","minute":81,"text":"Arrêt. Achraf Hakimi (Maroc) du pied droit depuis le point de penalty voit son tir stoppé. Dernière passe de Youssef En-Nesyri.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_112","match_id":"ZMB_MAR_2025_01","minute":81,"text":"Arrêt. Achraf Hakimi (Maroc) de la tête depuis le point de penalty voit son tir stoppé. Dernière passe de Mohamed Chibi suite à un centre.","event_type":"attempt_saved","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_113","match_id":"ZMB_MAR_2025_01","minute":82,"text":"Le jeu est interrompu: Willard Mwanza (Zambie) sur blessure.","event_type":"start_delay","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_114","match_id":"ZMB_MAR_2025_01","minute":83,"text":"Le match reprend suite à une courte interruption.","event_type":"end_delay","team":null}
+{"id":"ZMB_MAR_2025_01_115","match_id":"ZMB_MAR_2025_01","minute":83,"text":"Joseph Sabobo (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_116","match_id":"ZMB_MAR_2025_01","minute":83,"text":"Faute de Neil El Aynaoui (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_117","match_id":"ZMB_MAR_2025_01","minute":84,"text":"Azzedine Ounahi (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_118","match_id":"ZMB_MAR_2025_01","minute":84,"text":"Faute de Eliya Mandanji (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_119","match_id":"ZMB_MAR_2025_01","minute":85,"text":"David Hamansenya (Zambie) reçoit un carton jaune.","event_type":"yellow_card","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_120","match_id":"ZMB_MAR_2025_01","minute":85,"text":"Ilias Akhomach (Maroc) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_121","match_id":"ZMB_MAR_2025_01","minute":85,"text":"Faute de Miguel Chaiwa (Zambie).","event_type":"free_kick_lost","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_122","match_id":"ZMB_MAR_2025_01","minute":88,"text":"Corner, Zambie. Corner concédé par Nayef Aguerd.","event_type":"corner","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_123","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Hors jeu, Maroc. Mohamed Chibi a tenté une passe en profondeur mais Ilias Akhomach était hors jeu.","event_type":"offside","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_124","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Le quatrième arbitre vient d'indiquer 5 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"ZMB_MAR_2025_01_125","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Tir non cadré. Given Kalusa (Zambie) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Lameck Banda.","event_type":"miss","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_126","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Miguel Chaiwa (Zambie) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_127","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Faute de Ilias Akhomach (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_128","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Joseph Sabobo (Zambie) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick_won","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_129","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Faute de Azzedine Ounahi (Maroc).","event_type":"free_kick_lost","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_130","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Azzedine Ounahi (Maroc) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_131","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Tir non cadré. Lameck Banda (Zambie) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Given Kalusa.","event_type":"miss","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_132","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Tir contré. Wilson Chisala (Zambie) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Lubambo Musonda d'une passe de la tête.","event_type":"attempt_blocked","team":"Zambia"}
+{"id":"ZMB_MAR_2025_01_133","match_id":"ZMB_MAR_2025_01","minute":90,"text":"Tir non cadré. Youssef En-Nesyri (Maroc) du pied gauche de plus de 25 mètres.","event_type":"miss","team":"Morocco"}
+{"id":"ZMB_MAR_2025_01_134","match_id":"ZMB_MAR_2025_01","minute":90,"text":"La deuxième mi-temps se termine, Zambie 0, Maroc 3.","event_type":"end_second_half","team":null}

@@ -1,0 +1,108 @@
+{"id":"AGO_EGY_2025_01_001","match_id":"AGO_EGY_2025_01","minute":1,"text":"La première mi-temps commence.","event_type":"start","team":null}
+{"id":"AGO_EGY_2025_01_002","match_id":"AGO_EGY_2025_01","minute":1,"text":"Faute de Hossam Abdelmaguid (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_003","match_id":"AGO_EGY_2025_01","minute":1,"text":"Mabululu (Angola) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_004","match_id":"AGO_EGY_2025_01","minute":2,"text":"Mostafa Mohamed (Egypte) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_005","match_id":"AGO_EGY_2025_01","minute":2,"text":"Faute de Maestro (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_006","match_id":"AGO_EGY_2025_01","minute":5,"text":"Faute de Hossam Abdelmaguid (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_007","match_id":"AGO_EGY_2025_01","minute":5,"text":"Mabululu (Angola) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_008","match_id":"AGO_EGY_2025_01","minute":7,"text":"Faute de Kialonda Gaspar (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_009","match_id":"AGO_EGY_2025_01","minute":7,"text":"Mostafa Mohamed (Egypte) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_010","match_id":"AGO_EGY_2025_01","minute":8,"text":"Fredy (Angola) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_011","match_id":"AGO_EGY_2025_01","minute":8,"text":"Faute de Khaled Sobhy (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_012","match_id":"AGO_EGY_2025_01","minute":8,"text":"Le jeu est interrompu: Salah Mohsen (Egypte) sur blessure.","event_type":"injury_break","team":"away"}
+{"id":"AGO_EGY_2025_01_013","match_id":"AGO_EGY_2025_01","minute":10,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"AGO_EGY_2025_01_014","match_id":"AGO_EGY_2025_01","minute":11,"text":"Tir non cadré. Kialonda Gaspar (Angola) du pied gauche depuis le point de penalty. Dernière passe de Mabululu.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_015","match_id":"AGO_EGY_2025_01","minute":12,"text":"Faute de Beni (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_016","match_id":"AGO_EGY_2025_01","minute":12,"text":"Mahmoud Saber (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_017","match_id":"AGO_EGY_2025_01","minute":17,"text":"Faute de Mabululu (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_018","match_id":"AGO_EGY_2025_01","minute":17,"text":"Hossam Abdelmaguid (Egypte) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_019","match_id":"AGO_EGY_2025_01","minute":19,"text":"Corner, Egypte. Corner concédé par Beni.","event_type":"corner","team":"away"}
+{"id":"AGO_EGY_2025_01_020","match_id":"AGO_EGY_2025_01","minute":20,"text":"Tir non cadré. Mostafa Mohamed (Egypte) du pied droit à gauche de la surface de réparation.","event_type":"shot_missed","team":"away"}
+{"id":"AGO_EGY_2025_01_021","match_id":"AGO_EGY_2025_01","minute":20,"text":"Tir non cadré. Hossam Abdelmaguid (Egypte) de la tête à bout portant. Dernière passe de Mostafa Mohamed.","event_type":"shot_missed","team":"away"}
+{"id":"AGO_EGY_2025_01_022","match_id":"AGO_EGY_2025_01","minute":25,"text":"Zito Luvumbo (Angola) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_023","match_id":"AGO_EGY_2025_01","minute":25,"text":"Faute de Khaled Sobhy (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_024","match_id":"AGO_EGY_2025_01","minute":25,"text":"Ibrahim Adel (Egypte) reçoit un carton jaune.","event_type":"yellow_card","team":"away"}
+{"id":"AGO_EGY_2025_01_025","match_id":"AGO_EGY_2025_01","minute":27,"text":"Hors jeu, Egypte. Ahmed Abou El Fotouh a tenté une passe en profondeur mais Salah Mohsen était hors jeu.","event_type":"offside","team":"away"}
+{"id":"AGO_EGY_2025_01_026","match_id":"AGO_EGY_2025_01","minute":27,"text":"Faute de Chico Banza (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_027","match_id":"AGO_EGY_2025_01","minute":27,"text":"Ahmed Eid (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_028","match_id":"AGO_EGY_2025_01","minute":27,"text":"Chico Banza (Angola) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"home"}
+{"id":"AGO_EGY_2025_01_029","match_id":"AGO_EGY_2025_01","minute":28,"text":"Faute de Kialonda Gaspar (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_030","match_id":"AGO_EGY_2025_01","minute":28,"text":"Mostafa Mohamed (Egypte) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_031","match_id":"AGO_EGY_2025_01","minute":29,"text":"Corner, Angola. Corner concédé par Hossam Abdelmaguid.","event_type":"corner","team":"home"}
+{"id":"AGO_EGY_2025_01_032","match_id":"AGO_EGY_2025_01","minute":30,"text":"Corner, Angola. Corner concédé par Hossam Abdelmaguid.","event_type":"corner","team":"home"}
+{"id":"AGO_EGY_2025_01_033","match_id":"AGO_EGY_2025_01","minute":31,"text":"Tir non cadré. Beni (Angola) de la tête de la droite du coeur de la surface de réparation. Dernière passe de Fredy suite à un centre.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_034","match_id":"AGO_EGY_2025_01","minute":33,"text":"Faute de Chico Banza (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_035","match_id":"AGO_EGY_2025_01","minute":33,"text":"Mahmoud Saber (Egypte) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_036","match_id":"AGO_EGY_2025_01","minute":35,"text":"Arrêt. Mabululu (Angola) du pied droit à gauche de la surface de réparation voit son tir stoppé. Dernière passe de Maestro.","event_type":"shot_saved","team":"home"}
+{"id":"AGO_EGY_2025_01_037","match_id":"AGO_EGY_2025_01","minute":38,"text":"Arrêt. Mabululu (Angola) du pied droit depuis le point de penalty voit son tir stoppé.","event_type":"shot_saved","team":"home"}
+{"id":"AGO_EGY_2025_01_038","match_id":"AGO_EGY_2025_01","minute":42,"text":"Tir non cadré. Chico Banza (Angola) du pied droit depuis le point de penalty. Dernière passe de Mabululu.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_039","match_id":"AGO_EGY_2025_01","minute":44,"text":"Tir contré. Maestro (Angola) du pied droit de l'extérieur de la surface de réparation.","event_type":"shot_blocked","team":"home"}
+{"id":"AGO_EGY_2025_01_040","match_id":"AGO_EGY_2025_01","minute":44,"text":"Arrêt. Fredy (Angola) du pied droit de l'extérieur de la surface de réparation voit son tir stoppé. Dernière passe de Maestro.","event_type":"shot_saved","team":"home"}
+{"id":"AGO_EGY_2025_01_041","match_id":"AGO_EGY_2025_01","minute":45,"text":"Faute de Zito Luvumbo (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_042","match_id":"AGO_EGY_2025_01","minute":45,"text":"Ahmed Abou El Fotouh (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_043","match_id":"AGO_EGY_2025_01","minute":46,"text":"Le quatrième arbitre vient d'indiquer 2 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"AGO_EGY_2025_01_044","match_id":"AGO_EGY_2025_01","minute":46,"text":"Faute de Fredy (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_045","match_id":"AGO_EGY_2025_01","minute":46,"text":"Ibrahim Adel (Egypte) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_046","match_id":"AGO_EGY_2025_01","minute":47,"text":"Núrio Fortuna (Angola) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_047","match_id":"AGO_EGY_2025_01","minute":47,"text":"Faute de Ahmed Eid (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_048","match_id":"AGO_EGY_2025_01","minute":48,"text":"La première mi-temps se termine, Angola 0, Egypte 0.","event_type":"ht_end","team":null}
+{"id":"AGO_EGY_2025_01_049","match_id":"AGO_EGY_2025_01","minute":46,"text":"Remplacement, Egypte. Mostafa Fathi remplace Mostafa Mohamed.","event_type":"substitution","team":"away"}
+{"id":"AGO_EGY_2025_01_050","match_id":"AGO_EGY_2025_01","minute":46,"text":"Remplacement, Egypte. Zizo remplace Mahmoud Saber.","event_type":"substitution","team":"away"}
+{"id":"AGO_EGY_2025_01_051","match_id":"AGO_EGY_2025_01","minute":46,"text":"La deuxième mi-temps commence Angola 0, Egypte 0.","event_type":"start_2h","team":null}
+{"id":"AGO_EGY_2025_01_052","match_id":"AGO_EGY_2025_01","minute":46,"text":"Remplacement, Egypte. Yasser Ibrahim remplace Mohamed Ismaeil.","event_type":"substitution","team":"away"}
+{"id":"AGO_EGY_2025_01_053","match_id":"AGO_EGY_2025_01","minute":48,"text":"Chico Banza (Angola) se voit accorder un coup franc sur l'aile gauche.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_054","match_id":"AGO_EGY_2025_01","minute":48,"text":"Faute de Yasser Ibrahim (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_055","match_id":"AGO_EGY_2025_01","minute":49,"text":"Faute de Beni (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_056","match_id":"AGO_EGY_2025_01","minute":49,"text":"Mohanad Lasheen (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_057","match_id":"AGO_EGY_2025_01","minute":51,"text":"Arrêt. Fredy (Angola) du pied gauche de l'extérieur de la surface de réparation voit son tir stoppé. Dernière passe de Rui Modesto.","event_type":"shot_saved","team":"home"}
+{"id":"AGO_EGY_2025_01_058","match_id":"AGO_EGY_2025_01","minute":51,"text":"Núrio Fortuna (Angola) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_059","match_id":"AGO_EGY_2025_01","minute":51,"text":"Faute de Mohanad Lasheen (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_060","match_id":"AGO_EGY_2025_01","minute":53,"text":"Fredy (Angola) heurte le poteau gauche.","event_type":"hit_woodwork","team":"home"}
+{"id":"AGO_EGY_2025_01_061","match_id":"AGO_EGY_2025_01","minute":54,"text":"Le jeu est interrompu: Núrio Fortuna (Angola) sur blessure.","event_type":"injury_break","team":"home"}
+{"id":"AGO_EGY_2025_01_062","match_id":"AGO_EGY_2025_01","minute":55,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"AGO_EGY_2025_01_063","match_id":"AGO_EGY_2025_01","minute":57,"text":"Le jeu est interrompu: Mohanad Lasheen (Egypte) sur blessure.","event_type":"injury_break","team":"away"}
+{"id":"AGO_EGY_2025_01_064","match_id":"AGO_EGY_2025_01","minute":59,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"AGO_EGY_2025_01_065","match_id":"AGO_EGY_2025_01","minute":59,"text":"Arrêt. Zizo (Egypte) du pied droit à droite de la surface de réparation voit son tir stoppé. Dernière passe de Ibrahim Adel.","event_type":"shot_saved","team":"away"}
+{"id":"AGO_EGY_2025_01_066","match_id":"AGO_EGY_2025_01","minute":59,"text":"Corner, Egypte. Corner concédé par Hugo Marques.","event_type":"corner","team":"away"}
+{"id":"AGO_EGY_2025_01_067","match_id":"AGO_EGY_2025_01","minute":61,"text":"Le jeu est interrompu: Mohanad Lasheen (Egypte) sur blessure.","event_type":"injury_break","team":"away"}
+{"id":"AGO_EGY_2025_01_068","match_id":"AGO_EGY_2025_01","minute":64,"text":"Le match reprend suite à une courte interruption.","event_type":"restart","team":null}
+{"id":"AGO_EGY_2025_01_069","match_id":"AGO_EGY_2025_01","minute":64,"text":"Remplacement, Egypte. Mohamed Shehata remplace Mohanad Lasheen sur blessure.","event_type":"substitution","team":"away"}
+{"id":"AGO_EGY_2025_01_070","match_id":"AGO_EGY_2025_01","minute":64,"text":"Remplacement, Angola. Show remplace Beni.","event_type":"substitution","team":"home"}
+{"id":"AGO_EGY_2025_01_071","match_id":"AGO_EGY_2025_01","minute":64,"text":"Remplacement, Angola. Gelson Dala remplace Chico Banza.","event_type":"substitution","team":"home"}
+{"id":"AGO_EGY_2025_01_072","match_id":"AGO_EGY_2025_01","minute":64,"text":"Remplacement, Angola. Manuel Benson remplace Zito Luvumbo.","event_type":"substitution","team":"home"}
+{"id":"AGO_EGY_2025_01_073","match_id":"AGO_EGY_2025_01","minute":66,"text":"Corner, Angola. Corner concédé par Ahmed Eid.","event_type":"corner","team":"home"}
+{"id":"AGO_EGY_2025_01_074","match_id":"AGO_EGY_2025_01","minute":67,"text":"Faute de David Carmo (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_075","match_id":"AGO_EGY_2025_01","minute":67,"text":"Mostafa Fathi (Egypte) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_076","match_id":"AGO_EGY_2025_01","minute":69,"text":"Faute de Rui Modesto (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_077","match_id":"AGO_EGY_2025_01","minute":69,"text":"Ahmed Abou El Fotouh (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_078","match_id":"AGO_EGY_2025_01","minute":70,"text":"Gelson Dala (Angola) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_079","match_id":"AGO_EGY_2025_01","minute":70,"text":"Faute de Yasser Ibrahim (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_080","match_id":"AGO_EGY_2025_01","minute":70,"text":"Yasser Ibrahim (Egypte) reçoit un carton jaune pour jeu dangereux.","event_type":"yellow_card","team":"away"}
+{"id":"AGO_EGY_2025_01_081","match_id":"AGO_EGY_2025_01","minute":71,"text":"Tir non cadré. Manuel Benson (Angola) du pied gauche lointain de la droite. Dernière passe de Show.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_082","match_id":"AGO_EGY_2025_01","minute":75,"text":"Corner, Angola. Corner concédé par Yasser Ibrahim.","event_type":"corner","team":"home"}
+{"id":"AGO_EGY_2025_01_083","match_id":"AGO_EGY_2025_01","minute":76,"text":"Hors jeu, Egypte. Zizo a tenté une passe en profondeur mais Salah Mohsen était hors jeu.","event_type":"offside","team":"away"}
+{"id":"AGO_EGY_2025_01_084","match_id":"AGO_EGY_2025_01","minute":78,"text":"Manuel Benson (Angola) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_085","match_id":"AGO_EGY_2025_01","minute":78,"text":"Faute de Ibrahim Adel (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_086","match_id":"AGO_EGY_2025_01","minute":79,"text":"Remplacement, Angola. M'Bala Nzola remplace Maestro.","event_type":"substitution","team":"home"}
+{"id":"AGO_EGY_2025_01_087","match_id":"AGO_EGY_2025_01","minute":80,"text":"Tir non cadré. M'Bala Nzola (Angola) du pied droit à droite de la surface de réparation. Dernière passe de Rui Modesto.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_088","match_id":"AGO_EGY_2025_01","minute":81,"text":"Faute de Fredy (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_089","match_id":"AGO_EGY_2025_01","minute":81,"text":"Mostafa Fathi (Egypte) se voit accorder un coup franc sur l'aile droite.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_090","match_id":"AGO_EGY_2025_01","minute":82,"text":"Faute de Rui Modesto (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_091","match_id":"AGO_EGY_2025_01","minute":82,"text":"Ibrahim Adel (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_092","match_id":"AGO_EGY_2025_01","minute":84,"text":"Arrêt. Zizo (Egypte) du pied droit de l'extérieur de la surface de réparation voit son tir stoppé. Dernière passe de Ibrahim Adel.","event_type":"shot_saved","team":"away"}
+{"id":"AGO_EGY_2025_01_093","match_id":"AGO_EGY_2025_01","minute":84,"text":"Tir non cadré. Manuel Benson (Angola) du pied gauche de l'extérieur de la surface de réparation. Dernière passe de M'Bala Nzola.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_094","match_id":"AGO_EGY_2025_01","minute":86,"text":"Remplacement, Angola. Ary Papel remplace Mabululu.","event_type":"substitution","team":"home"}
+{"id":"AGO_EGY_2025_01_095","match_id":"AGO_EGY_2025_01","minute":86,"text":"Remplacement, Egypte. Hamdi Fathy remplace Salah Mohsen.","event_type":"substitution","team":"away"}
+{"id":"AGO_EGY_2025_01_096","match_id":"AGO_EGY_2025_01","minute":87,"text":"Tir non cadré. Hamdi Fathy (Egypte) du pied droit de l'extérieur de la surface de réparation. Dernière passe de Ibrahim Adel.","event_type":"shot_missed","team":"away"}
+{"id":"AGO_EGY_2025_01_097","match_id":"AGO_EGY_2025_01","minute":89,"text":"Fredy (Angola) se voit accorder un coup franc dans la moitié de terrain adverse.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_098","match_id":"AGO_EGY_2025_01","minute":89,"text":"Faute de Hamdi Fathy (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_099","match_id":"AGO_EGY_2025_01","minute":90,"text":"Tir non cadré. Manuel Benson (Angola) du pied gauche de l'extérieur de la surface de réparation.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_100","match_id":"AGO_EGY_2025_01","minute":91,"text":"Le quatrième arbitre vient d'indiquer 6 minutes de temps additionnel.","event_type":"added_time","team":null}
+{"id":"AGO_EGY_2025_01_101","match_id":"AGO_EGY_2025_01","minute":92,"text":"Faute de M'Bala Nzola (Angola).","event_type":"foul","team":"home"}
+{"id":"AGO_EGY_2025_01_102","match_id":"AGO_EGY_2025_01","minute":92,"text":"Yasser Ibrahim (Egypte) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"away"}
+{"id":"AGO_EGY_2025_01_103","match_id":"AGO_EGY_2025_01","minute":95,"text":"Tir non cadré. Manuel Benson (Angola) du pied droit depuis le point de penalty. Dernière passe de Ary Papel suite à un centre.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_104","match_id":"AGO_EGY_2025_01","minute":96,"text":"Kialonda Gaspar (Angola) se voit accorder un coup franc dans sa moitié de terrain.","event_type":"free_kick","team":"home"}
+{"id":"AGO_EGY_2025_01_105","match_id":"AGO_EGY_2025_01","minute":96,"text":"Faute de Ibrahim Adel (Egypte).","event_type":"foul","team":"away"}
+{"id":"AGO_EGY_2025_01_106","match_id":"AGO_EGY_2025_01","minute":97,"text":"Tir contré. Manuel Benson (Angola) du pied gauche de l'extérieur de la surface de réparation.","event_type":"shot_blocked","team":"home"}
+{"id":"AGO_EGY_2025_01_107","match_id":"AGO_EGY_2025_01","minute":97,"text":"Tir non cadré. Show (Angola) du pied droit de l'extérieur de la surface de réparation.","event_type":"shot_missed","team":"home"}
+{"id":"AGO_EGY_2025_01_108","match_id":"AGO_EGY_2025_01","minute":97,"text":"La deuxième mi-temps se termine, Angola 0, Egypte 0.","event_type":"ft_end","team":null}
