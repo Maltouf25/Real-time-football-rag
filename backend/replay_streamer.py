@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
 
 from kafka import KafkaProducer
-
+import os
 
 # -------------------------
 # Helpers: time extraction
@@ -24,7 +24,13 @@ def comment_time_sec(c: dict) -> int:
     minute = int(c.get("minute", 0) or 0)
     extra = int(c.get("extra", 0) or 0)
     second = int(c.get("second", 0) or 0)
-    return (minute + extra) * 60 + second
+    
+    # Separate first half (0-45) from second half (46+)
+    # This ensures 46'+0' always comes AFTER 45'+X' regardless of X
+    half_offset = 0 if minute <= 45 else 1000000
+    
+    # Use tuple-based encoding: minute*10000 + extra*100 + second
+    return half_offset + minute * 10000 + extra * 100 + second
 
 
 def comment_time_tuple(c: dict) -> Tuple[int, int]:
@@ -51,7 +57,13 @@ def event_time_tuple(e: dict) -> Tuple[int, int]:
 
 def event_time_sec(e: dict) -> Optional[int]:
     m, x = event_time_tuple(e)
-    return (m + x) * 60
+    
+    # Separate first half (0-45) from second half (46+)
+    # This ensures 46'+0' always comes AFTER 45'+X' regardless of X
+    half_offset = 0 if m <= 45 else 1000000
+    
+    # Use tuple-based encoding
+    return half_offset + m * 10000 + x * 100
 
 
 def is_goal_event(e: dict) -> bool:
@@ -138,11 +150,24 @@ class ReplayManager:
       - games.state
     """
 
-    def __init__(self, project_root: Path, kafka_bootstrap: str = "localhost:9092"):
-        self.root = project_root
-        self.data_dir = self.root / "data" / "games"
+    def __init__(self, project_root: Path, kafka_bootstrap: str = "localhost:9092", kafka_config: Optional[Dict[str, Any]] = None):
+        root = Path(project_root).resolve()
+        self.root = root
+        if root.is_file():
+            root = root.parent
+
+        # Try a couple common layouts
+        candidate1 = root / "data" / "games"
+        candidate2 = root.parent / "data" / "games"
+
+        default_data_dir = candidate1 if candidate1.exists() else candidate2
+
+        # Allow override from Railway Variables
+        self.data_dir = Path(os.getenv("REPLAY_DATA_DIR", str(default_data_dir))).resolve()
+
         self.kafka_bootstrap = kafka_bootstrap
 
+        self.kafka_config = kafka_config or {}
         self._lock = threading.Lock()
         self._active_run_id: Optional[str] = None
         self._progress: Dict[str, Dict[str, Any]] = {}
@@ -152,6 +177,7 @@ class ReplayManager:
         self.producer = KafkaProducer(
             bootstrap_servers=self.kafka_bootstrap,
             value_serializer=lambda v: json.dumps(v, ensure_ascii=False).encode("utf-8"),
+            **self.kafka_config,
         )
 
     def list_games(self) -> List[dict]:
@@ -209,7 +235,7 @@ class ReplayManager:
                     "start_at_extra": int(start_at_tuple[1]),
                     "known_minute": int(start_at_tuple[0]),
                     "known_extra": int(start_at_tuple[1]),
-                    "known_time_sec": int((start_at_tuple[0] + start_at_tuple[1]) * 60),
+                    "known_time_sec": (0 if start_at_tuple[0] <= 45 else 1000000) + start_at_tuple[0] * 10000 + start_at_tuple[1] * 100,
                     "comments_sent_total": 0,
                     "events_sent_total": 0,
                     "score_str": "0-0",
@@ -310,7 +336,7 @@ class ReplayManager:
                 self._progress[game_id] = p
             self._publish_state(
                 run_id, game_id, tick_sec,
-                known_time_sec=int((start_at_tuple[0] + start_at_tuple[1]) * 60),
+                known_time_sec=(0 if start_at_tuple[0] <= 45 else 1000000) + start_at_tuple[0] * 10000 + start_at_tuple[1] * 100,
                 known_minute=int(start_at_tuple[0]),
                 known_extra=int(start_at_tuple[1]),
                 status="error",
@@ -373,7 +399,10 @@ class ReplayManager:
 
         score_str = f"{score_home}-{score_away}"
         known_minute, known_extra = int(start_at_tuple[0]), int(start_at_tuple[1])
-        known_time_sec = int((known_minute + known_extra) * 60)
+        
+        # Use tuple-based encoding with half-time separation
+        half_offset = 0 if known_minute <= 45 else 1000000
+        known_time_sec = half_offset + known_minute * 10000 + known_extra * 100
 
         with self._lock:
             p = self._progress[game_id]
@@ -398,11 +427,61 @@ class ReplayManager:
         )
         self.producer.flush()
 
-        # cursor in seconds
+        # cursor in encoded time (minute*10000 + extra*100)
         cursor = known_time_sec
 
         while not stop_event.is_set():
-            cursor += tick_sec
+            # 🔧 FIX: Adjust tick based on whether we're in injury/extra time
+            current_minute = cursor // 10000  # Extract current minute from cursor
+            if cursor >= 1000000:  # Second half
+                current_minute = (cursor - 1000000) // 10000
+
+            # Check if there's any data in the next small increment (extra minute)
+            # vs the next full minute
+            next_small = cursor + 100  # Next extra minute
+            next_big = cursor + 10000  # Next full minute
+
+            # Count items in small vs big jump
+            has_data_in_small = False
+            has_data_in_big = False
+
+            # Check comments
+            temp_c = c_idx
+            while temp_c < len(comments) and comment_time_sec(comments[temp_c]) <= next_small:
+                has_data_in_small = True
+                break
+            temp_c = c_idx
+            while temp_c < len(comments) and comment_time_sec(comments[temp_c]) > next_small and comment_time_sec(comments[temp_c]) <= next_big:
+                has_data_in_big = True
+                break
+
+                # Check events
+            temp_e = e_idx
+            while temp_e < len(events) and (event_time_sec(events[temp_e]) or 0) <= next_small:
+                has_data_in_small = True
+                break
+            temp_e = e_idx
+            while temp_e < len(events) and (event_time_sec(events[temp_e]) or 0) > next_small and (event_time_sec(events[temp_e]) or 0) <= next_big:
+                has_data_in_big = True
+                break
+            # Decide tick size based on where data exists and current minute
+            if current_minute >= 45 and current_minute < 46:
+                # First half injury time
+                if has_data_in_small:
+                    tick_encoded = 100  # Advance by 1 extra minute
+                else:
+                    # Jump to second half minute 46
+                    # Need to go from 45XXXX to 1460000
+                    tick_encoded = 1460000 - cursor  # Jump directly to 46'
+            elif current_minute >= 90:
+                # Second half injury time: use small tick if there's data
+                tick_encoded = 100 if has_data_in_small else 10000
+            else:
+                # Normal time: advance by 1 full minute
+                tick_encoded = 10000
+            print(f"tick_sec={tick_sec}, current_minute={current_minute}, tick_encoded={tick_encoded}, has_data_in_small={has_data_in_small}")
+            cursor += tick_encoded
+            print(f"Cursor advanced to {cursor}")
             window_end = cursor
 
             comments_batch: List[Tuple[int, dict]] = []

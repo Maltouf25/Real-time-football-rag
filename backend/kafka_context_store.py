@@ -8,18 +8,38 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from collections import deque
-
+from typing import Any, Dict, Optional
 from kafka import KafkaConsumer
-
+import os
 
 # -------------------------
 # Formatting helpers
 # -------------------------
 
-def fmt_mmss(sec: int) -> str:
-    m = sec // 60
-    s = sec % 60
-    return f"{m}:{s:02d}"
+def fmt_mmss(encoded_time: int) -> str:
+    """
+    Decode the tuple-based encoding with half-time offset.
+    Format: half_offset + minute*10000 + extra*100 + second
+    
+    Examples:
+    - 450300 = 45'+3'
+    - 1460000 = 46'+0' (second half)
+    """
+    # Remove half offset
+    if encoded_time >= 1000000:
+        encoded_time -= 1000000
+    
+    # Decode: minute*10000 + extra*100 + second
+    minute = encoded_time // 10000
+    remainder = encoded_time % 10000
+    extra = remainder // 100
+    second = remainder % 100
+    
+    # Format display
+    if extra > 0:
+        return f"{minute}' +{extra}' {second}s" if second > 0 else f"{minute}' +{extra}'"
+    else:
+        return f"{minute}:{second:02d}"
 
 
 def half_from_minute(minute: Optional[int]) -> str:
@@ -88,16 +108,20 @@ def event_line(item: dict) -> str:
 
 
 def score_line(item: dict) -> str:
-    tsec = int(item.get("tsec", 0) or 0)
+    # Try event_time_sec first (used by Kafka messages), fall back to tsec
+    tsec = int(item.get("event_time_sec", 0) or item.get("tsec", 0) or 0)
     minute = item.get("minute")
     extra = item.get("extra")
     score_str = item.get("score_str") or f"{item.get('score_home', 0)}-{item.get('score_away', 0)}"
     ts = time_str(minute, extra, tsec)
 
-    team = item.get("team")
-    scorer = item.get("scorer")
-    assist = item.get("assist")
-    goal_type = item.get("goal_type")
+    # Extract goal data - could be in different formats
+    goal_data = item.get("goal_data") or {}
+    
+    team = goal_data.get("team") or item.get("team")
+    scorer = goal_data.get("scorer") or item.get("scorer")
+    assist = goal_data.get("assist") or item.get("assist")
+    goal_type = goal_data.get("type") or item.get("goal_type") or item.get("why")
 
     parts = [f"[GAME {ts}] SCORE: {score_str}"]
     if team:
@@ -111,12 +135,12 @@ def score_line(item: dict) -> str:
     return " ".join(parts).strip() + "\n"
 
 
-def header_text(run_id: str, game_id: str, known_tsec: int, score_str: str) -> str:
+def header_text(run_id: str, game_id: str, known_tsec: int, score_home: int, score_away: int) -> str:
     return (
         f"RUN: {run_id}\n"
         f"GAME: {game_id}\n"
         f"Current game time: {fmt_mmss(known_tsec)}\n"
-        f"SCORE: {score_str}\n"
+        f"SCORE: {score_home}-{score_away}\n"
         "----------------------------------------\n"
     )
 
@@ -153,7 +177,13 @@ def comment_time_sec(c: dict) -> int:
     minute = int(c.get("minute", 0) or 0)
     extra = int(c.get("extra", 0) or 0)
     second = int(c.get("second", 0) or 0)
-    return (minute + extra) * 60 + second
+    
+    # Separate first half (0-45) from second half (46+)
+    # This ensures 46'+0' always comes AFTER 45'+X' regardless of X
+    half_offset = 0 if minute <= 45 else 1000000
+    
+    # Use tuple-based encoding: minute*10000 + extra*100 + second
+    return half_offset + minute * 10000 + extra * 100 + second
 
 
 def event_time_tuple(e: dict) -> Tuple[int, int]:
@@ -169,7 +199,13 @@ def event_time_tuple(e: dict) -> Tuple[int, int]:
 
 def event_time_sec(e: dict) -> Optional[int]:
     m, x = event_time_tuple(e)
-    return (m + x) * 60
+    
+    # Separate first half (0-45) from second half (46+)
+    # This ensures 46'+0' always comes AFTER 45'+X' regardless of X
+    half_offset = 0 if m <= 45 else 1000000
+    
+    # Use tuple-based encoding
+    return half_offset + m * 10000 + x * 100
 
 
 def is_goal_event(e: dict) -> bool:
@@ -193,10 +229,13 @@ def extract_team_name(e: dict) -> Optional[str]:
 class GameBuffers:
     comments: deque
     events: deque
-    scores: deque
+    scores: deque  # Last 10 score events (for LLM context)
     score_str: str
     known_tsec: int
-
+    
+    # NEW: Track full match score (accurate even with 100+ goals)
+    score_home: int = 0
+    score_away: int = 0
 
 class KafkaContextStore:
     """
@@ -205,13 +244,36 @@ class KafkaContextStore:
       - then consume Kafka topics to keep files updated continuously
     """
 
-    def __init__(self, project_root: Path, kafka_bootstrap: str = "localhost:9092", top_k: int = 10):
-        self.root = project_root
+    def _find_repo_root(self, p: Path) -> Path:
+        """
+        Accepts /app, /app/backend, /app/backend/..., etc.
+        Returns the folder that contains BOTH: data/ and backend/
+        """
+        cur = p.resolve()
+        for _ in range(6):  # climb a few levels max
+            if (cur / "data").exists() and (cur / "backend").exists():
+                return cur
+            if cur.parent == cur:
+                break
+            cur = cur.parent
+        # fallback: keep your old logic
+        return p.resolve() if (p.resolve() / "data").exists() else p.resolve().parent
+
+
+    def __init__(self, project_root: Path, kafka_bootstrap: str = "localhost:9092",
+                top_k: int = 10, kafka_config: Optional[Dict[str, Any]] = None):
+
+        self.root = self._find_repo_root(Path(project_root))
+
         self.kafka_bootstrap = kafka_bootstrap
         self.top_k = top_k
+        self.kafka_config = kafka_config or {}
 
-        self.data_dir = self.root / "data" / "games"
-        self.runtime_dir = self.root / "backend" / "runtime"
+        # Data location (Railway best: set REPLAY_DATA_DIR=/app/data/games)
+        self.data_dir = Path(os.getenv("REPLAY_DATA_DIR", str(self.root / "data" / "games"))).resolve()
+
+        # Runtime location (optional env override)
+        self.runtime_dir = Path(os.getenv("REPLAY_RUNTIME_DIR", str(self.root / "backend" / "runtime"))).resolve()
         self.runtime_dir.mkdir(parents=True, exist_ok=True)
 
         self._lock = threading.Lock()
@@ -283,21 +345,28 @@ class KafkaContextStore:
             rdir = self._game_runtime_dir(run_id, game_id)
             rdir.mkdir(parents=True, exist_ok=True)
 
-            hdr = header_text(run_id, game_id, buf.known_tsec, buf.score_str)
+            # Use actual tracked score (accurate even with 100+ goals)
+            hdr = header_text(run_id, game_id, buf.known_tsec, buf.score_home, buf.score_away)
+
+            # Sort and extract lines from tuples
+            comments_sorted = sorted(list(buf.comments), key=lambda x: x[0])  # Sort by (minute, extra, second)
+            events_sorted = sorted(list(buf.events), key=lambda x: x[0])
+            scores_sorted = sorted(list(buf.scores), key=lambda x: x[0])
+            
+            # Extract just the text lines (discard sort keys)
+            comments_text = "".join([line for _, line in comments_sorted])
+            events_text = "".join([line for _, line in events_sorted])
+            scores_text = "".join([line for _, line in scores_sorted])
 
             # separate files (still create these for reference)
-            (rdir / "rag_comments.txt").write_text(hdr + "".join(list(buf.comments)), encoding="utf-8")
-            (rdir / "rag_events.txt").write_text(hdr + "".join(list(buf.events)), encoding="utf-8")
-            (rdir / "rag_scores.txt").write_text(hdr + "".join(list(buf.scores)), encoding="utf-8")
+            (rdir / "rag_comments.txt").write_text(hdr + comments_text, encoding="utf-8")
+            (rdir / "rag_events.txt").write_text(hdr + events_text, encoding="utf-8")
+            (rdir / "rag_scores.txt").write_text(hdr + scores_text, encoding="utf-8")
 
             # combined file (what the chatbot will use)
-            # Include ALL items from each buffer (up to 10 each = 30 total)
-            combined = []
-            combined.extend(list(buf.scores))     # Up to 10 scores
-            combined.extend(list(buf.events))     # Up to 10 events
-            combined.extend(list(buf.comments))   # Up to 10 comments
-            # Don't limit - give LLM all available context (max 30 items)
-            (rdir / "rag_recap.txt").write_text(hdr + "".join(combined), encoding="utf-8")
+            # Include ALL items from each buffer (up to 10 each = 30 total), properly sorted
+            combined = scores_text + events_text + comments_text
+            (rdir / "rag_recap.txt").write_text(hdr + combined, encoding="utf-8")
 
     def get_topk_text(self, game_id: str) -> str:
         with self._lock:
@@ -314,7 +383,10 @@ class KafkaContextStore:
     def _bootstrap_game_from_disk(self, run_id: str, game_id: str, start_at_tuple: Tuple[int, int]):
         gfolder = self.data_dir / game_id
         minute, extra = int(start_at_tuple[0]), int(start_at_tuple[1])
-        offset_tsec = (minute + extra) * 60
+        
+        # Use new encoding with half-time offset
+        half_offset = 0 if minute <= 45 else 1000000
+        offset_tsec = half_offset + minute * 10000 + extra * 100
 
         comments = load_json_or_jsonl(gfolder, "comments")
         events = load_json_or_jsonl(gfolder, "events")
@@ -328,34 +400,41 @@ class KafkaContextStore:
         past_comments = past_comments[-self.top_k:]
         comment_lines = deque(maxlen=self.top_k)
         for c in past_comments:
-            comment_lines.append(
-                comment_line({
-                    "event_time_sec": comment_time_sec(c),
-                    "minute": int(c.get("minute", 0) or 0),
-                    "extra": int(c.get("extra", 0) or 0),
-                    "type": c.get("type") or "Comment",
-                    "text": c.get("text") or "",
-                })
-            )
+            minute = int(c.get("minute", 0) or 0)
+            extra = int(c.get("extra", 0) or 0)
+            second = int(c.get("second", 0) or 0)
+            sort_key = (minute, extra, second)
+            line = comment_line({
+                "event_time_sec": comment_time_sec(c),
+                "minute": minute,
+                "extra": extra,
+                "type": c.get("type") or "Comment",
+                "text": c.get("text") or "",
+            })
+            # Store as tuple: (sort_key, line)
+            comment_lines.append((sort_key, line))
 
-        # last K events BEFORE offset
-        past_events = [e for e in events if (event_time_sec(e) or 0) <= offset_tsec]
-        past_events = past_events[-self.top_k:]
+        # last K events BEFORE offset (for display/LLM context)
+        all_past_events = [e for e in events if (event_time_sec(e) or 0) <= offset_tsec]
+        past_events_for_display = all_past_events[-self.top_k:]  # Last 10 for display
+        
         event_lines = deque(maxlen=self.top_k)
-        for e in past_events:
+        for e in past_events_for_display:
             m, x = event_time_tuple(e)
-            event_lines.append(
-                event_line({
-                    "event_time_sec": event_time_sec(e) or 0,
-                    "minute": m,
-                    "extra": x,
-                    "type": e.get("type") or "Event",
-                    "detail": e.get("detail"),
-                    "data": e,
-                })
-            )
+            sort_key = (m, x, 0)
+            line = event_line({
+                "event_time_sec": event_time_sec(e) or 0,
+                "minute": m,
+                "extra": x,
+                "type": e.get("type") or "Event",
+                "detail": e.get("detail"),
+                "data": e,
+            })
+            # Store as tuple: (sort_key, line)
+            event_lines.append((sort_key, line))
 
         # score history (goals) BEFORE offset
+        # ⚠️ IMPORTANT: Calculate from ALL events, not just last 10!
         meta_path = gfolder / "meta.json"
         home = "Home"
         away = "Away"
@@ -370,13 +449,15 @@ class KafkaContextStore:
         score_home = 0
         score_away = 0
         goal_lines = []
-        for e in past_events:
+        
+        # Loop through ALL events to calculate accurate score
+        for e in all_past_events:  # ✅ ALL events, not just last 10!
             if not is_goal_event(e):
                 continue
             team = extract_team_name(e)
             if not team:
                 continue
-            # update
+            # update score
             if team == home:
                 score_home += 1
             elif team == away:
@@ -385,9 +466,10 @@ class KafkaContextStore:
             scorer = e.get("player", {}).get("name") if isinstance(e.get("player"), dict) else None
             assist = e.get("assist", {}).get("name") if isinstance(e.get("assist"), dict) else None
             goal_type = e.get("detail")
-
-            goal_lines.append(score_line({
-                "tsec": event_time_sec(e) or 0,
+            
+            sort_key = (m, x, 0)
+            line = score_line({
+                "event_time_sec": event_time_sec(e) or 0,  # ✅ Fixed to use event_time_sec
                 "minute": m,
                 "extra": x,
                 "score_home": score_home,
@@ -397,7 +479,9 @@ class KafkaContextStore:
                 "scorer": scorer,
                 "assist": assist,
                 "goal_type": goal_type,
-            }))
+            })
+            # Store as tuple: (sort_key, line)
+            goal_lines.append((sort_key, line))
 
         goal_lines = goal_lines[-self.top_k:]
         score_deque = deque(goal_lines, maxlen=self.top_k)
@@ -410,6 +494,8 @@ class KafkaContextStore:
                 scores=score_deque,
                 score_str=score_str,
                 known_tsec=offset_tsec,
+                score_home=score_home,  # ✅ Initialize with calculated score
+                score_away=score_away,  # ✅ Initialize with calculated score
             )
 
         self._write_all_files(run_id, game_id)
@@ -427,6 +513,7 @@ class KafkaContextStore:
             value_deserializer=lambda b: json.loads(b.decode("utf-8")),
             consumer_timeout_ms=500,
             group_id=f"ctx-comments-{int(time.time())}",
+            **self.kafka_config,
         )
         while not self._stop.is_set():
             for msg in consumer:
@@ -443,6 +530,7 @@ class KafkaContextStore:
             value_deserializer=lambda b: json.loads(b.decode("utf-8")),
             consumer_timeout_ms=500,
             group_id=f"ctx-events-{int(time.time())}",
+            **self.kafka_config,
         )
         while not self._stop.is_set():
             for msg in consumer:
@@ -459,6 +547,7 @@ class KafkaContextStore:
             value_deserializer=lambda b: json.loads(b.decode("utf-8")),
             consumer_timeout_ms=500,
             group_id=f"ctx-scores-{int(time.time())}",
+            **self.kafka_config,
         )
         while not self._stop.is_set():
             for msg in consumer:
@@ -475,6 +564,7 @@ class KafkaContextStore:
         game_id = item.get("game_id")
         with self._lock:
             if self._run_id != run_id:
+                print(f"DEBUG: Rejecting msg - Store RunID: {self._run_id}, Msg RunID: {run_id}")
                 return None, None
             if game_id not in self._active_game_ids:
                 return None, None
@@ -486,12 +576,19 @@ class KafkaContextStore:
             return
 
         line = comment_line(item)
+        
+        # Extract time for sorting: (minute, extra, second)
+        minute = int(item.get("minute", 0) or 0)
+        extra = int(item.get("extra", 0) or 0)
+        second = int(item.get("second", 0) or 0)
+        sort_key = (minute, extra, second)
 
         with self._lock:
             buf = self._buffers.get(game_id)
             if not buf:
                 return
-            buf.comments.append(line)
+            # Store as tuple: (sort_key, line)
+            buf.comments.append((sort_key, line))
             # update known time
             tsec = int(item.get("event_time_sec", 0) or 0)
             buf.known_tsec = max(buf.known_tsec, tsec)
@@ -504,14 +601,20 @@ class KafkaContextStore:
             return
 
         line = event_line(item)
+        
+        # Extract time for sorting: (minute, extra, 0)
+        minute = int(item.get("minute", 0) or 0)
+        extra = int(item.get("extra", 0) or 0)
+        sort_key = (minute, extra, 0)
 
         with self._lock:
             buf = self._buffers.get(game_id)
             if not buf:
                 return
-            buf.events.append(line)
+            # Store as tuple: (sort_key, line)
+            buf.events.append((sort_key, line))
             tsec = int(item.get("event_time_sec", 0) or 0)
-            buf.known_tsec = max(buf.known_tsec, tsec)
+            #buf.known_tsec = max(buf.known_tsec, tsec)
 
         self._write_all_files(run_id, game_id)
 
@@ -521,14 +624,33 @@ class KafkaContextStore:
             return
 
         line = score_line(item)
+        
+        # Extract time for sorting: (minute, extra, 0)
+        minute = int(item.get("minute", 0) or 0)
+        extra = int(item.get("extra", 0) or 0)
+        sort_key = (minute, extra, 0)
 
         with self._lock:
             buf = self._buffers.get(game_id)
             if not buf:
                 return
-            buf.scores.append(line)
-            buf.score_str = item.get("score_str") or buf.score_str
-            tsec = int(item.get("tsec", 0) or 0)
-            buf.known_tsec = max(buf.known_tsec, tsec)
+            
+            # Add to rolling window (last 10 for LLM) as tuple: (sort_key, line)
+            buf.scores.append((sort_key, line))
+            
+            # Update actual score (tracks full history)
+            score_home = item.get("score_home")
+            score_away = item.get("score_away")
+            if score_home is not None:
+                buf.score_home = int(score_home)
+            if score_away is not None:
+                buf.score_away = int(score_away)
+            
+            # Also keep score_str for compatibility
+            buf.score_str = item.get("score_str") or f"{buf.score_home}-{buf.score_away}"
+            
+            # Update timestamp
+            tsec = int(item.get("event_time_sec", 0) or item.get("tsec", 0) or 0)
+            #buf.known_tsec = max(buf.known_tsec, tsec)
 
         self._write_all_files(run_id, game_id)

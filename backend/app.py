@@ -57,7 +57,13 @@ def list_games():
 
 @app.get("/api/replay/progress")
 def replay_progress():
-    return replay_manager.get_progress()
+    prog = replay_manager.get_progress()
+    # Print errors to console for debugging
+    if prog.get("progress"):
+        for game_id, game_prog in prog["progress"].items():
+            if game_prog.get("error"):
+                print(f"❌ Error for {game_id}: {game_prog['error']}")
+    return prog
 
 
 @app.post("/api/replay/reset")

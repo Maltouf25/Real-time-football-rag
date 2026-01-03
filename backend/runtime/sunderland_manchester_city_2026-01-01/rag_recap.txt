@@ -1,0 +1,7 @@
+RUN: run_1767451731
+GAME: sunderland_manchester_city_2026-01-01
+Current game time: 3:00
+SCORE: 0-0
+----------------------------------------
+[GAME 2' | 1st Half] COMMENT Commentary: C’est la troisième rencontre du jour de l’An entre Sunderland et Manchester City en Premier League. The Black Cats avaient remporté un match mémorable 1-0 à domicile en 2012, tandis que the Citizens s’étaient imposés 3-2 à l’Etihad en 2015.
+[GAME 3' | 1st Half] COMMENT Commentary: Le défenseur de City, Ake, s’est arrêté avec une possible blessure dès les toutes premières minutes de ce match, et perdre le Néerlandais est la dernière chose dont les visiteurs aient besoin – surtout s’ils envisagent sérieusement de le vendre ce mois-ci.
