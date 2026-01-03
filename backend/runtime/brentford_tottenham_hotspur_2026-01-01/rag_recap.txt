@@ -1,0 +1,7 @@
+RUN: run_1767451731
+GAME: brentford_tottenham_hotspur_2026-01-01
+Current game time: 3:00
+SCORE: 0-0
+----------------------------------------
+[GAME 2' | 1st Half] COMMENT Commentary: Frank revient à Brentford, une équipe qu’il a dirigée pendant 278 matches de championnat entre 2018 et 2025. Il est le premier ancien entraîneur des Bees à revenir pour un match de championnat depuis Mark Warburton en novembre 2020 avec QPR (une défaite 1-2).
+[GAME 3' | 1st Half] COMMENT Highlight: Gray se retrouve rapidement dans une position intéressante, mais sa tentative cadrée est courageusement contrée par Ajer. Dans un milieu à trois avec Palhinha et Bentancur, on s’attendrait à ce qu’il se projette le plus haut.

@@ -1,8 +1,5 @@
-RUN: run_1767135359
+RUN: run_1767451731
 GAME: chelsea_aston_villa_2025-12-27
-Current game time: 94:00
-SCORE: 1-2
+Current game time: 2:00
+SCORE: 0-0
 ----------------------------------------
-[GAME 37' | 1st Half] SCORE: 1-0 | Team: Chelsea | ⚽ Joao Pedro | 🅰️ R. James | Type: Normal Goal
-[GAME 63' | 2nd Half] SCORE: 1-1 | Team: Aston Villa | ⚽ O. Watkins | Type: Normal Goal
-[GAME 84' | 2nd Half] SCORE: 1-2 | Team: Aston Villa | ⚽ O. Watkins | 🅰️ Y. Tielemans | Type: Normal Goal
