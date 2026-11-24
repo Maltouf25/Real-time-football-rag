@@ -360,6 +360,12 @@ Create a folder in `data/games/` with these files:
 - **Streaming:** Apache Kafka
 - **AI:** Mistral (mistral-small-latest)
 
+## ✅ Continuous Integration
+
+GitHub Actions runs on pushes, pull requests, and manual dispatches. It checks
+Python syntax in `backend/`, then installs the frontend from its lockfile and
+runs ESLint and a production build.
+
 ## 🤝 Contributing
 
 Contributions welcome! Ideas:

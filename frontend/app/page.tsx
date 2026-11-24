@@ -21,6 +21,24 @@ type ChatMsg = {
   ts: number;
 };
 
+type GameProgress = {
+  status?: string;
+  score_str?: string;
+  known_minute?: number;
+  known_extra?: number;
+  known_time_sec?: number;
+};
+
+type ReplayProgress = {
+  active_game_ids?: string[];
+  progress?: Record<string, GameProgress>;
+};
+
+type ChatResponse = {
+  answer: string;
+  contexts?: Record<string, string>;
+};
+
 async function fetchAvailableGames(): Promise<GameMeta[]> {
   const res = await fetch(`${API_BASE_URL}/api/games`);
   if (!res.ok) throw new Error("Failed to load games");
@@ -42,13 +60,13 @@ async function resetReplay(): Promise<void> {
   if (!res.ok) throw new Error("Failed to reset simulation");
 }
 
-async function fetchProgress(): Promise<any> {
+async function fetchProgress(): Promise<ReplayProgress> {
   const res = await fetch(`${API_BASE_URL}/api/replay/progress`);
   if (!res.ok) throw new Error("Failed to load progress");
   return await res.json();
 }
 
-async function chatForGame(params: { game_id: string; message: string }): Promise<{ answer: string; contexts?: any }> {
+async function chatForGame(params: { game_id: string; message: string }): Promise<ChatResponse> {
   const res = await fetch(`${API_BASE_URL}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -77,7 +95,7 @@ export default function Page() {
   const [startExtra, setStartExtra] = useState<Record<string, string>>({});
 
   const [streamingGames, setStreamingGames] = useState<GameMeta[]>([]);
-  const [progress, setProgress] = useState<any>(null);
+  const [progress, setProgress] = useState<ReplayProgress | null>(null);
 
   const [loading, setLoading] = useState(true);
   const [starting, setStarting] = useState(false);
@@ -100,8 +118,8 @@ export default function Page() {
         setSelected(Object.fromEntries(list.map((g) => [g.game_id, false])));
         setStartMin(Object.fromEntries(list.map((g) => [g.game_id, ""])));
         setStartExtra(Object.fromEntries(list.map((g) => [g.game_id, ""])));
-      } catch (e: any) {
-        setErr(e?.message ?? "Error loading games");
+      } catch (error: unknown) {
+        setErr(error instanceof Error ? error.message : "Error loading games");
       } finally {
         setLoading(false);
       }
@@ -170,8 +188,8 @@ export default function Page() {
         for (const gid of selectedIds) next[gid] = false;
         return next;
       });
-    } catch (e: any) {
-      setErr(e?.message ?? "Failed to start streaming");
+    } catch (error: unknown) {
+      setErr(error instanceof Error ? error.message : "Failed to start streaming");
     } finally {
       setStarting(false);
     }
@@ -186,8 +204,8 @@ export default function Page() {
       setProgress(null);
       setActiveChatGameId(null);
       setChatByGame({});
-    } catch (e: any) {
-      setErr(e?.message ?? "Failed to reset");
+    } catch (error: unknown) {
+      setErr(error instanceof Error ? error.message : "Failed to reset");
     } finally {
       setResetting(false);
     }
@@ -224,12 +242,16 @@ export default function Page() {
           { role: "assistant", text: resp.answer ?? "(no answer)", ts: Date.now() },
         ],
       }));
-    } catch (e: any) {
+    } catch (error: unknown) {
       setChatByGame((prev) => ({
         ...prev,
         [activeChatGameId]: [
           ...(prev[activeChatGameId] ?? []),
-          { role: "assistant", text: `Error: ${e?.message ?? "unknown"}`, ts: Date.now() },
+          {
+            role: "assistant",
+            text: `Error: ${error instanceof Error ? error.message : "unknown"}`,
+            ts: Date.now(),
+          },
         ],
       }));
     } finally {
